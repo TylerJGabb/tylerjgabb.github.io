@@ -1,0 +1,36 @@
+div#animation-window{
+    position : relative;/*setting this to ABSOLUTE breaks OrbitControls*/
+    background-color: red;
+    width : 1000px;
+    height : 1000px;
+    left : 0;
+    top : 0;
+}
+
+div#interactive-menu{
+    background: #ff851b;
+    position : absolute;
+    width : 400px;
+    height : 1000px;
+    left : 1000px;
+    top : 0;
+    /*margin : 10px;*/
+}
+
+.dg.main{
+    right : 0;
+    position: absolute;
+}
+
+p#animation-text{
+    font-size: 30px;
+    color: red;
+    position : absolute;
+    top : 0;
+    width : 400px;
+}
+
+body {
+  margin : 0px;
+  /*this needs to be set to 0px so that everything sits flush with the window*/
+}

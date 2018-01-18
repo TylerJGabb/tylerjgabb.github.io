@@ -16,7 +16,7 @@ class Planet {
         var geom = new THREE.SphereGeometry(radius,16,16);
         var mat = new THREE.MeshBasicMaterial({
             color : hexColor,
-            wireframe : true
+            lambert : true
         });
 
         this.mesh = new THREE.Mesh(geom,mat);
