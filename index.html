@@ -1,23 +1,14 @@
 <!DOCTYPE html>
-<head>
-    <title>Solar System Simulator</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/89/three.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.16/p5.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.16/addons/p5.dom.js"></script>
-    <script src="js/controls/OrbitControls.js"></script>
-    <script src="js/controls/dat.gui.js"></script>
-    <script src="js/SSB.js"></script>
-    <link rel="stylesheet" href="css/animationStyle.css">
-</head>
-<body>
-    <div id="animation-window">
-        <p id='animation-text'>
-            Interact with the menu in the top right corner to add planets and moons to the system
-        </p>
-    </div>
-    <!--
-    <div id="interactive-menu">
-        AN INTERACTIVE DIRECTORY-LIKE MENU WILL APPEAR HERE
-    </div> -->
-    <script src="js/solarAnimation.js"></script>
-</body>
+<html>
+    <head>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/89/three.js"></script>
+        <script src="js/controls/OrbitControls.js"></script>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <h1>Lighting and Shadows</h1>
+        <div id="container"></div>
+        <h2>Hover over the semi-transparent sphere to move the spotlight around the cube</h2>
+        <script src="js/worldTemplateScript.js"></script>
+    </body>
+</html>
