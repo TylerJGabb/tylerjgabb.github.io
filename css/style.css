@@ -22,19 +22,31 @@ h1#main-header{
     color : white;
 }
 
-.eye-friendly-block{
+.eye-friendly-block {
     font-family: Courier New, Courier, monospace;
-    background: rgb(120,120,120);
-    margin-left : 15px;
-    margin-right : 15px;
+    background: white;
+    margin-left: 15px;
+    margin-right: 15px;
     border-radius: 30px;
     padding: 15px;
-    color: white;
+    color: rgb(247,72,75);
+    font-weight : bold;
+}
+
+p.eye-friendly-block{
+    text-indent : 50px;
 }
 
 
 ul.eye-friendly-block{
-    margin-left : 100px;
     padding-left : 50px;
-    width : 60%;
+}
+
+a:visited, a:link, a:active{
+    text-decoration : none;
+}
+
+a:hover {
+    background: rgb(247,72,75);
+    color : white;
 }
