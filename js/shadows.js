@@ -79,6 +79,7 @@ camera.lookAt(new THREE.Vector3(0, 0, 0));
 function animate() {
     light.position.x = 40 * Math.sin(delta);
     light.position.z = 40 * Math.cos(delta);
+    cube.rotation.x = cube.rotation.y = cube.rotation.z = delta
     delta += 0.01;
     spotLightHelper.update();
     requestAnimationFrame(animate);
