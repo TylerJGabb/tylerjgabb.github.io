@@ -76,7 +76,7 @@ fixClustering = function(){
         totDist += dist.length();
     });
     avgDist = totDist/orbiters.length;
-    console.log(avgDist);
+    //console.log(avgDist);
     if(avgDist < 1){
         let deltaPos = new THREE.Vector2(0,0);
         orbiters.forEach(o => {
@@ -127,10 +127,27 @@ function calm(){
     COM.gravity = 0.07;
 }
 
+var paused = false;
+function pauseRandom(){
+    if(paused) return;
+    paused = true;
+    setTimeout(() => {
+        paused = false;
+    }, 1000)
+}
+
+document.addEventListener('mousemove', (snd) => {
+    pauseRandom();
+    x = 1 - 2*snd.clientX/window.innerWidth;
+    y = 1 - 2*snd.clientY/window.innerHeight;
+    COM.update(-x*50,y*50);
+});
+
+
 timeout = function(){
-    COM.update(50 - 100*Math.random(), 50 - 100*Math.random());
+    if(!paused) COM.update(45 - 90*Math.random(), 45 - 90*Math.random());
     setTimeout(() => {
         timeout();
-    }, 1000 + 1000*Math.random());
+    }, 500 + 4500*Math.random());
 }
 timeout();
