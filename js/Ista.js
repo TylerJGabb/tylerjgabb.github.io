@@ -81,7 +81,7 @@ fixClustering = function(){
         let deltaPos = new THREE.Vector2(0,0);
         orbiters.forEach(o => {
             deltaPos.subVectors(o.mesh.position, centr);
-            deltaPos.setLength(0.5);
+            deltaPos.setLength(1*Math.random());
             o.velocity.set(deltaPos.x, deltaPos.y);
         });
     }
