@@ -35,5 +35,13 @@
             I enjoy teaching and consider myself a good educator although I've never professionally held the title. You may browse my personal projects to see examples of the source for these demos -- it has been optimized for teaching.
 
         </p>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const obj = document.getElementById("shadows");
+                console.log(obj);
+                console.log(obj.offsetWidth);
+                obj.style.height = obj.offsetWidth + 'px';
+            });
+        </script>
     </body>
 </html>
